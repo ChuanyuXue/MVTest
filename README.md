@@ -3,11 +3,11 @@ A Distribution-Free Test of Independence Based on Mean Variance Index.
 
 ## Installation
 
-    pip install MVTPY
+    pip install mvtpy
     
 ## Usage
 
-    from MVTPY.mvtest import mvtest
+    from mvtpy.mvtest import mvtest
     sample = mvtest()
     y = np.linspace(0,5,5)
     x = y + np.random.normal()
