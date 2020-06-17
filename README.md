@@ -9,7 +9,7 @@ A Distribution-Free Test of Independence Based on Mean Variance Index.
 
     from mvtpy.mvtest import mvtest
     sample = mvtest()
-    y = np.linspace(0,5,5)
+    y = np.array(range(5))
     x = y + np.random.normal()
     # Y has to be a discrete vector
     sample.test(x, y)
