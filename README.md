@@ -1,7 +1,7 @@
 # MVTest
 A Distribution-Free Test of Independence Based on Mean Variance Index.
 
-## Installation
+## Install
 
     pip install mvtpy
     
