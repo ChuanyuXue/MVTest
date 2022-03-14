@@ -14,8 +14,9 @@ A Distribution-Free Test of Independence Based on Mean Variance Index.
     # Y has to be a discrete vector
     sample.test(x, y)
     
-## Notice
-This package only performs acceptable efficiency on large-scale dataset due to my limited programming skills. If you have any better solution on this algorithm, please contact me at cs_xcy@126.com
+## Notes
+
+This package is purely achieved with Numpy library in limited execution performance. Please read the reference and speed up the process by yourself to evaluate large dataset.
 
 ## Reference
 
