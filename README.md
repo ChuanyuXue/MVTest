@@ -16,7 +16,7 @@ A Distribution-Free Test of Independence Based on Mean Variance Index.
     
 ## Notes
 
-This package is purely achieved with Numpy library in limited execution performance. Please read the reference and speed up the process by yourself to evaluate large dataset.
+This package is purely achieved with Numpy library with limited execution performance. Please read the reference and speed up the the code by yourself for large scale dataset.
 
 ## Reference
 
