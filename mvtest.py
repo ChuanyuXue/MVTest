@@ -61,11 +61,22 @@ class mvtest:
             self._m = 10
 
         if self._n == len(y):
+            f_x = {}
+            for s in numpy.unique(x):
+                f_x[s] = self._f(s, x)
+                
+            fr_dict = {}
+            for t in numpy.unique(y):
+                fr_dict[t] = {}
+                for s in numpy.unique(x):
+                    fr_dict[t][s] = self._fr(s, t, x, y)
+
             result = 0
             for t in numpy.unique(y):
                 pr = self._pr(t, y)
-                for s in x:
-                    result += pr * numpy.square(self._fr(s, t, x, y) - self._f(s, x))
+                for s in (x):
+                    result += pr * numpy.square(fr_dict[t][s] - f_x[s])
+                    
             return {'Tn': round(result, 2), 'p-value': self._quantiles_transformer(result)}
         else:
             raise Exception("Two vectors must be equal to the same dimension vector.")
